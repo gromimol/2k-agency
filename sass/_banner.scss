@@ -1,0 +1,51 @@
+/*banner*/ 
+.banner{
+	width: 25em;
+	height: 31.875em;
+	background:transparent url('../img/bg/banner-bg.jpg') left top no-repeat;
+	background-size: cover;
+	position: relative;
+	.bage{
+		bottom: 8em;
+	}
+}
+.banner__content{
+	padding: 4.375em 3em 3em;
+}
+.banner__title{
+	font-size: 2rem;
+	font-weight: 200;
+	margin-bottom: .3em;
+}
+.gods-name{
+	font-size: 3rem;
+	font-weight: 300;
+}
+.banner__top{
+	margin-bottom: 2em;
+}
+.banner__price{
+	display: flex;
+	flex-direction: column;
+}
+.old-price{
+	font-size: .9375rem;
+	font-weight: 200;
+	color: rgba(#222121, .5);
+	text-decoration: line-through;
+	margin-bottom: .5em;
+}
+.current-price{
+	font-weight: 300;
+	font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+

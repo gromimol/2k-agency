@@ -1,6 +1,8 @@
 /*Header*/ 
 .header{
 	padding: 0 20px 0;
+	position: relative;
+	z-index: 1;
 }
 .header__top{
 	background-color: var(--grey-light);
@@ -371,6 +373,7 @@
 	overflow-y: auto;
 	background-color: var(--blue);
 	padding-top: 40px;
+	padding-bottom: 40px;
 	transform: translateX(-120%);
 	visibility: hidden;
 	z-index: 30;

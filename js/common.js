@@ -45,5 +45,9 @@ $(document).ready(function () {
 		$('#overlay').hide();
 	});
 
+	// slider
+	$('.main-slider').slick({
+		dots: true
+	});
 
 })
