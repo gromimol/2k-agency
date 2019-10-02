@@ -1,0 +1,159 @@
+:root{
+	--roboto: "Roboto", sans-serif;
+	--ptsans: "PTSans", sans-serif;
+	--blue: #0081c6;
+	--blue-light: #91c8e3;
+	--black: #222121;
+	--black-bg: #222933;
+	--black-light: rgba(34, 33, 33, .6);
+	--grey-light: rgba(0, 0, 0, .02);
+	--grey-bg: #f9f9f9;
+	--brown-light: #d9d9d9;
+	--grey: #dfe5ed;
+	--grey-dark: #717b87;
+	--green: #00e991;
+}
+html, body{
+	min-height: 100%;
+}
+html{
+	font-size: 16px;
+}
+body{
+	background-color: #fff;
+	font-family: var(--roboto);
+	color: var(--black);
+}
+img{
+	max-width: 100%;
+}
+a{
+	color: var(--black);
+	transition: all .2s;
+}
+.wrapper{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.container{
+	width: 100%;
+	max-width: 1410px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+.main{
+	flex: 1 0 auto;
+}
+.footer{
+	flex: 0 0 auto;
+}
+.flex{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	&--wrap{
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+	&--center{
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+	&--between{
+		-webkit-box-pack: justify;
+		-moz-box-pack: justify;
+		-webkit-justify-content: space-between;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+	}
+
+}
+
+.btn{
+	display: inline-block;
+	font-size: 1rem;
+	font-weight: 700;
+	font-family: var(--ptsans);
+	background-color: var(--blue);
+	color: #fff;
+	border: 2px solid var(--blue);
+	border-radius: 20px;
+	padding: 1em 1.5em;
+	cursor: pointer;
+	appearance: none;
+	transition: all .3s;
+	&:hover{
+		background-color: #fff;
+		color: var(--black);
+	}
+	&--lt{
+		padding: .65em 1.3em;
+	}
+	&--border{
+		background-color: #fff;
+		color: var(--black);
+		&:hover{
+			background-color: var(--blue);
+			color: #fff;
+		}
+	}
+	&--flex{
+		display: inline-flex;
+		align-items: center;
+		.ico{
+			margin-right: .5em;
+		}
+	}
+}
+
+.ico{
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	svg{
+		width: 100%;
+		height: 100%;
+	}
+}
+
+::-webkit-input-placeholder {  }
+::-moz-placeholder          {  } /* Firefox 19+ */
+:-moz-placeholder           {  } /* Firefox 18- */
+:-ms-input-placeholder      {  }
+
+// Для стилей автозаполнения полей
+// @-webkit-keyframes autofill {
+//     to {
+//         color: #fff;
+//         background: transparent;
+//     }
+// }
+
+// input:-webkit-autofill {
+//     -webkit-animation-name: autofill;
+//     -webkit-animation-fill-mode: both;
+// }
+
+/* хром, сафари */
+.element::-webkit-scrollbar { width: 0; }
+
+/* ie 10+ */
+.element { -ms-overflow-style: none; }
+
+/* фф (свойство больше не работает, других способов тоже нет)*/
+.element { overflow: -moz-scrollbars-none; }
+
+
+
+
+
+
+
