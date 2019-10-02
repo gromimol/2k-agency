@@ -10,6 +10,16 @@
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__top flex flex--center flex--between">
+				<div class="header__top__mobile">
+					<div class="menu-btn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<a href="#" class="logo">
+						<img src="img/logo.png" alt="">
+					</a>
+				</div>
 				<div class="header__top__contact flex flex--center">
 					<div class="header__top__contact__item">
 						<span class="ico">
@@ -71,20 +81,235 @@
 					</ul>
 
 					<div class="header__top__btns flex flex--center">
-						<a href="#" class="btn btn--lt btn--border">
+						<a href="#" class="btn hide-on-mobile btn--lt btn--border">
 							Как сделать заказ
 						</a>
-						<a href="#" class="btn btn--flex btn--lt js-callback">
+						<a href="#" class="btn callback btn--flex btn--lt js-callback">
 							<span class="ico">
 								<svg>
 									<use xlink:href="#svg-callback"></use>
 								</svg>
 							</span>
-							Обратный звонок
+							<span class="text">Обратный звонок</span>
 						</a>
 					</div>
 				</div>
 
+			</div>
+
+			<div class="header__main flex">
+				<div class="menu-btn">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<a href="#" class="logo">
+					<img src="img/logo.png" alt="">
+				</a>
+				<div class="header__main__center flex">
+					<ul class="header__main__menu flex">
+						<li class="catalog-li">
+							<a href="#">
+								<span class="text">Каталог сувениров</span>
+								<span class="ico">
+									<svg>
+										<use xlink:href="#svg-burger"></use>
+									</svg>
+								</span>
+							</a>
+							<ul class="submenu">
+								<li><a href="#">Пишущие инструменты</a></li>
+								<li><a href="#">Электроника</a></li>
+								<li><a href="#">Сумки и рюкзаки</a></li>
+								<li><a href="#">Блокноты и ежедневники</a></li>
+								<li><a href="#">Посуда</a></li>
+								<li><a href="#">Чехлы</a></li>
+								<li><a href="#">Полиграфия</a></li>
+								<li><a href="#">Текстиль</a></li>
+								<li><a href="#">Награды</a></li>
+								<li><a href="#">Зонты</a></li>
+								<li><a href="#">Промо-сувениры</a></li>
+								<li><a href="#">Таблички и наружная реклама</a></li>
+								<li><a href="#">Пакеты</a></li>
+								<li><a href="#">Бейджи, шильды, номерки</a></li>
+								<li><a href="#">Таблички и наружная реклама</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<span class="text">Брендирование</span>
+								<span class="ico">
+									<svg>
+										<use xlink:href="#svg-burger"></use>
+									</svg>
+								</span>
+							</a>
+							<ul class="submenu">
+								<li><a href="#">инструменты</a></li>
+								<li><a href="#">Электроника</a></li>
+								<li><a href="#">Сумки и рюкзаки</a></li>
+								<li><a href="#">Блокноты и ежедневники</a></li>
+								<li><a href="#">Посуда</a></li>
+								<li><a href="#">Чехлы</a></li>
+								<li><a href="#">Полиграфия</a></li>
+								<li><a href="#">Текстиль</a></li>
+								<li><a href="#">Награды</a></li>
+								<li><a href="#">Зонты</a></li>
+								<li><a href="#">Промо-сувениры</a></li>
+							</ul>
+						</li>
+					</ul>
+
+					<div class="header__main__search">
+						<form action="#">
+							<input type="search" class="search-input" placeholder="Название товара или артикул:">
+							<button type="submit" class="search-btn">
+								<svg>
+									<use xlink:href="#svg-search"></use>
+								</svg>
+							</button>
+						</form>
+					</div>
+				</div>
+				<a href='#' class="header-cart flex">
+					<div class="header-cart__current">
+						
+						<span class="gods-count">2</span>
+						<div class="ico">
+							<svg>
+								<use xlink:href="#svg-cart"></use>
+							</svg>
+						</div>
+					</div>
+					<div class="header-cart__total">
+						<span class="header-cart__total__title">На сумму: </span>
+						<div class="header-cart__total__summa">200 345</div>
+					</div>
+				</a>
+			</div>
+
+			<!-- Меню для мобильного -->
+			<div class="mobile-menu">
+				<div class="menu-close">
+					<svg>
+						<use xlink:href="#svg-close"></use>
+					</svg>
+				</div>
+				<ul class="header__main__menu flex">
+					<li class="catalog-li">
+						<a href="#">
+							<span class="text">Каталог сувениров</span>
+							<span class="ico">
+								<svg>
+									<use xlink:href="#svg-burger"></use>
+								</svg>
+							</span>
+						</a>
+						<ul class="submenu">
+							<li><a href="#">Пишущие инструменты</a></li>
+							<li><a href="#">Электроника</a></li>
+							<li><a href="#">Сумки и рюкзаки</a></li>
+							<li><a href="#">Блокноты и ежедневники</a></li>
+							<li><a href="#">Посуда</a></li>
+							<li><a href="#">Чехлы</a></li>
+							<li><a href="#">Полиграфия</a></li>
+							<li><a href="#">Текстиль</a></li>
+							<li><a href="#">Награды</a></li>
+							<li><a href="#">Зонты</a></li>
+							<li><a href="#">Промо-сувениры</a></li>
+							<li><a href="#">Таблички и наружная реклама</a></li>
+							<li><a href="#">Пакеты</a></li>
+							<li><a href="#">Бейджи, шильды, номерки</a></li>
+							<li><a href="#">Таблички и наружная реклама</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">
+							<span class="text">Брендирование</span>
+							<span class="ico">
+								<svg>
+									<use xlink:href="#svg-burger"></use>
+								</svg>
+							</span>
+						</a>
+						<ul class="submenu">
+							<li><a href="#">инструменты</a></li>
+							<li><a href="#">Электроника</a></li>
+							<li><a href="#">Сумки и рюкзаки</a></li>
+							<li><a href="#">Блокноты и ежедневники</a></li>
+							<li><a href="#">Посуда</a></li>
+							<li><a href="#">Чехлы</a></li>
+							<li><a href="#">Полиграфия</a></li>
+							<li><a href="#">Текстиль</a></li>
+							<li><a href="#">Награды</a></li>
+							<li><a href="#">Зонты</a></li>
+							<li><a href="#">Промо-сувениры</a></li>
+						</ul>
+					</li>
+				</ul>
+
+				<ul class="header__top__menu">
+					<li class="dropdown-link">
+						<a href="#">
+							Информация
+						</a>
+						<ul class="header__top__submenu">
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Оплата</a></li>
+							<li><a href="#">Оптовикам</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">
+							О нас
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Контакты
+						</a>
+					</li>
+				</ul>
+
+				<div class="header__top__contact">
+					<div class="header__top__contact__item">
+						<span class="ico">
+							<svg>
+								<use xlink:href="#svg-clock"></use>
+							</svg>
+						</span>
+						<span class="text">
+							Пн—Пт с 09 00 до 18 00 
+						</span>
+					</div>
+
+					<a href="tel:88125078102" class="header__top__contact__item header__top__contact__item--lg">
+						<span class="ico">
+							<svg>
+								<use xlink:href="#svg-call"></use>
+							</svg>
+						</span>
+						<span class="text">
+							8 (812) 507-81-02
+						</span>
+					</a>
+
+					<a href="mailto:info@2k-a.ru" class="header__top__contact__item">
+						<span class="ico">
+							<svg>
+								<use xlink:href="#svg-envelope"></use>
+							</svg>
+						</span>
+						<span class="text">
+							info@2k-a.ru
+						</span>
+					</a>
+				</div>
+
+				<a href="#" class="btn btn--lt btn--border">
+					Как сделать заказ
+				</a>
 			</div>
 
 		</header>
@@ -102,15 +327,44 @@
 
 				<symbol viewBox="0 0 15 14" id="svg-callback"><g><g><path d="M10.3558,7.19507c-0.01453,-0.76723 -0.33551,-1.45054 -0.86126,-1.95265c-0.52575,-0.51594 -1.27009,-0.82254 -2.07324,-0.82254c-0.07333,0 -0.14596,0.01383 -0.21929,0.01383c-0.01453,0 -0.02905,0 -0.04358,0c-0.08785,0 -0.16049,0.01383 -0.24835,0.02813c-0.17502,0.04148 -0.36526,-0.08392 -0.39431,-0.26512c-0.04358,-0.16737 0.08785,-0.34857 0.2774,-0.3767c0.10238,-0.01383 0.20476,-0.02766 0.30645,-0.04148c0.11691,-0.01431 0.21929,-0.01431 0.32167,-0.01431c0.30645,0 0.62744,0.04196 0.91936,0.11158c0.62813,0.16737 1.18293,0.47445 1.63535,0.90647c0.36526,0.36287 0.67171,0.79489 0.84742,1.28317c0.13144,0.3767 0.20407,0.76675 0.20407,1.17111c0,0.04196 0,0.08392 0,0.15354c-0.01453,0.06962 -0.01453,0.11158 -0.01453,0.15354c-0.01453,0.1812 -0.18955,0.32091 -0.37978,0.30661c-0.18955,-0.01383 -0.33551,-0.1812 -0.32098,-0.3624c0.01453,-0.05579 0.01453,-0.09775 0.04358,-0.13971c0,-0.02766 0,-0.09727 0,-0.15306zM12.32735,7.36244c0,-0.04196 0,-0.09775 0,-0.13971c0,-0.61369 -0.13144,-1.19925 -0.35073,-1.72901c-0.24835,-0.58556 -0.62813,-1.12963 -1.09507,-1.57595c-0.56933,-0.54359 -1.27009,-0.94843 -2.05871,-1.17111c-0.45242,-0.12589 -0.92006,-0.1955 -1.41606,-0.1955c-0.13144,0 -0.2774,0 -0.42406,0.01383c-0.04358,0 -0.08716,0.01431 -0.13144,0.01431c-0.10169,0.01383 -0.18955,0.02766 -0.29193,0.04148c-0.17502,0.04196 -0.36456,-0.08345 -0.39431,-0.26464c-0.04358,-0.16737 0.08785,-0.34857 0.2774,-0.3767c0.16118,-0.02766 0.32167,-0.04196 0.48216,-0.05579c0.16049,-0.01383 0.32098,-0.01383 0.48216,-0.01383c0.14596,0 0.30645,0 0.45242,0.01383c1.35795,0.09775 2.58446,0.66948 3.50451,1.54781c0.80245,0.76723 1.37247,1.77097 1.56202,2.88677c0.04358,0.29278 0.07333,0.58556 0.07333,0.89264c0,0.15306 0,0.30661 -0.01522,0.46015c-0.01453,0.1812 -0.18955,0.32043 -0.37909,0.30661c-0.19024,-0.01383 -0.3362,-0.1812 -0.32167,-0.3624c0,-0.09775 0.01453,-0.1812 0.04427,-0.29278zM14.99897,7.25086c0,0.19503 -0.01453,0.40436 -0.02905,0.61369c-0.01453,0.1812 -0.18955,0.32043 -0.37978,0.30661c-0.18955,-0.01383 -0.33551,-0.1812 -0.32098,-0.3624c0,-0.09775 0.01453,-0.18167 0.01453,-0.26512c0,-0.09775 0,-0.20933 0,-0.30708c0,-1.82676 -0.77409,-3.47233 -2.01513,-4.65727c-1.25557,-1.18542 -2.97877,-1.92451 -4.87699,-1.92451c-0.20407,0 -0.39362,0.01383 -0.59838,0.02766c-0.10238,0 -0.20407,0.01383 -0.30645,0.02813c-0.10238,0.01383 -0.19024,0.02766 -0.29193,0.04148c-0.17571,0.04196 -0.36526,-0.08345 -0.39431,-0.26464c-0.04427,-0.16737 0.08716,-0.34857 0.2774,-0.3767c0.2186,-0.04196 0.43789,-0.06962 0.65718,-0.08345c0.2186,-0.01431 0.43789,-0.02813 0.65649,-0.02813c2.10299,0 4.00121,0.80872 5.38821,2.13385c1.37247,1.31083 2.2192,3.12376 2.2192,5.11789zM13.11528,13.53987c-4.46746,2.32887 -12.48371,-4.72736 -13.12636,-9.09233c-0.24835,-1.77097 2.774,-5.56374 3.85455,-3.19338l1.15387,2.46859c0.54027,1.38044 -1.12413,1.74284 -1.09507,2.46811c0.01453,0.47398 1.27009,1.93834 1.56202,2.24543c0.6136,0.64135 2.4973,2.04992 3.50451,2.28691c0.48216,0.11158 0.891,-0.47445 1.1096,-0.69714c0.90553,-0.92077 0.93458,-1.21355 1.79584,-0.76723l2.58446,1.32465c0.99338,0.57173 -0.35004,2.42662 -1.34342,2.95639z" fill="currentColor" fill-opacity="1"></path></g></g></symbol>
 
-				<symbol viewBox="0 0 33 26"><g><g><path d="M21.7668,22.29334c1.03074,0 1.8664,0.8297 1.8664,1.85299c0,1.02329 -0.83566,1.85299 -1.8664,1.85299c-1.03005,0 -1.86571,-0.8297 -1.86571,-1.85299c0,-1.02329 0.83566,-1.85299 1.86571,-1.85299z" fill="currentColor" fill-opacity="1"></path></g><g><path d="M14.30397,22.29334c1.03074,0 1.86571,0.8297 1.86571,1.85299c0,1.02329 -0.83497,1.85299 -1.86571,1.85299c-1.03074,0 -1.86571,-0.8297 -1.86571,-1.85299c0,-1.02329 0.83497,-1.85299 1.86571,-1.85299z" fill="currentColor" fill-opacity="1"></path></g><g><path d="M29.85292,4.99941v0v2.47049v0h-14.92705v0v-2.47049v0z" fill="currentColor" fill-opacity="1"></path></g><g><path d="M25.98938,17.90453v0l-2.22474,-1.10483v0l6.21903,-12.35294v0l2.22543,1.10483v0z" fill="currentColor" fill-opacity="1"></path></g><g><path d="M11.19377,18.58736v0v-2.47049v0h14.92705v0v2.47049v0z" fill="currentColor" fill-opacity="1"></path></g><g><path d="M5.03008,1.65678v0l2.37693,-0.7267v0l4.9766,16.05892v0l-2.37831,0.7267v0z" fill="currentColor" fill-opacity="1"></path></g><g><path d="M-0.00048,2.52892v0v-2.47097v0h6.21903v0v2.47097v0z" fill="currentColor" fill-opacity="1"></path></g><g><g><path d="M-0.00048,2.52892v0v-2.47097v0h6.21903v0v2.47097v0z" fill="currentColor" fill-opacity="1"></path></g><g><path d="M5.03008,1.65678v0l2.37693,-0.7267v0l4.9766,16.05892v0l-2.37831,0.7267v0z" fill="currentColor" fill-opacity="1"></path></g><g><path d="M11.19377,18.58736v0v-2.47049v0h14.92705v0v2.47049v0z" fill="currentColor" fill-opacity="1"></path></g><g><path d="M25.98938,17.90453v0l-2.22474,-1.10483v0l6.21903,-12.35294v0l2.22543,1.10483v0z" fill="currentColor" fill-opacity="1"></path></g><g><path d="M29.85292,4.99941v0v2.47049v0h-14.92705v0v-2.47049v0z" fill="currentColor" fill-opacity="1"></path></g><g><path d="M14.30397,22.29334c1.03074,0 1.86571,0.8297 1.86571,1.85299c0,1.02329 -0.83497,1.85299 -1.86571,1.85299c-1.03074,0 -1.86571,-0.8297 -1.86571,-1.85299c0,-1.02329 0.83497,-1.85299 1.86571,-1.85299z" fill="currentColor" fill-opacity="1"></path></g><g><path d="M21.7668,22.29334c1.03074,0 1.8664,0.8297 1.8664,1.85299c0,1.02329 -0.83566,1.85299 -1.8664,1.85299c-1.03005,0 -1.86571,-0.8297 -1.86571,-1.85299c0,-1.02329 0.83566,-1.85299 1.86571,-1.85299z" fill="currentColor" fill-opacity="1"></path></g></g></g></symbol>
+				<symbol viewBox="0 0 33 26" id="svg-cart"><g><g><path d="M21.7668,22.29334c1.03074,0 1.8664,0.8297 1.8664,1.85299c0,1.02329 -0.83566,1.85299 -1.8664,1.85299c-1.03005,0 -1.86571,-0.8297 -1.86571,-1.85299c0,-1.02329 0.83566,-1.85299 1.86571,-1.85299z" fill="currentColor" fill-opacity="1"></path></g><g><path d="M14.30397,22.29334c1.03074,0 1.86571,0.8297 1.86571,1.85299c0,1.02329 -0.83497,1.85299 -1.86571,1.85299c-1.03074,0 -1.86571,-0.8297 -1.86571,-1.85299c0,-1.02329 0.83497,-1.85299 1.86571,-1.85299z" fill="currentColor" fill-opacity="1"></path></g><g><path d="M29.85292,4.99941v0v2.47049v0h-14.92705v0v-2.47049v0z" fill="currentColor" fill-opacity="1"></path></g><g><path d="M25.98938,17.90453v0l-2.22474,-1.10483v0l6.21903,-12.35294v0l2.22543,1.10483v0z" fill="currentColor" fill-opacity="1"></path></g><g><path d="M11.19377,18.58736v0v-2.47049v0h14.92705v0v2.47049v0z" fill="currentColor" fill-opacity="1"></path></g><g><path d="M5.03008,1.65678v0l2.37693,-0.7267v0l4.9766,16.05892v0l-2.37831,0.7267v0z" fill="currentColor" fill-opacity="1"></path></g><g><path d="M-0.00048,2.52892v0v-2.47097v0h6.21903v0v2.47097v0z" fill="currentColor" fill-opacity="1"></path></g><g><g><path d="M-0.00048,2.52892v0v-2.47097v0h6.21903v0v2.47097v0z" fill="currentColor" fill-opacity="1"></path></g><g><path d="M5.03008,1.65678v0l2.37693,-0.7267v0l4.9766,16.05892v0l-2.37831,0.7267v0z" fill="currentColor" fill-opacity="1"></path></g><g><path d="M11.19377,18.58736v0v-2.47049v0h14.92705v0v2.47049v0z" fill="currentColor" fill-opacity="1"></path></g><g><path d="M25.98938,17.90453v0l-2.22474,-1.10483v0l6.21903,-12.35294v0l2.22543,1.10483v0z" fill="currentColor" fill-opacity="1"></path></g><g><path d="M29.85292,4.99941v0v2.47049v0h-14.92705v0v-2.47049v0z" fill="currentColor" fill-opacity="1"></path></g><g><path d="M14.30397,22.29334c1.03074,0 1.86571,0.8297 1.86571,1.85299c0,1.02329 -0.83497,1.85299 -1.86571,1.85299c-1.03074,0 -1.86571,-0.8297 -1.86571,-1.85299c0,-1.02329 0.83497,-1.85299 1.86571,-1.85299z" fill="currentColor" fill-opacity="1"></path></g><g><path d="M21.7668,22.29334c1.03074,0 1.8664,0.8297 1.8664,1.85299c0,1.02329 -0.83566,1.85299 -1.8664,1.85299c-1.03005,0 -1.86571,-0.8297 -1.86571,-1.85299c0,-1.02329 0.83566,-1.85299 1.86571,-1.85299z" fill="currentColor" fill-opacity="1"></path></g></g></g></symbol>
 
-				<symbol viewBox="0 0 24 23"><defs><clipPath id="ClipPath3886"><path d="M11.1477,-0.00082c6.15677,0 11.14859,4.99153 11.14859,11.14845c0,6.1574 -4.99182,11.14845 -11.14859,11.14845c-6.15746,0 -11.14859,-4.99105 -11.14859,-11.14845c0,-6.15692 4.99113,-11.14845 11.14859,-11.14845z" fill="#ffffff"></path></clipPath><clipPath id="ClipPath3895"><path d="M11.1477,-0.00082c6.15677,0 11.14859,4.99153 11.14859,11.14845c0,6.1574 -4.99182,11.14845 -11.14859,11.14845c-6.15746,0 -11.14859,-4.99105 -11.14859,-11.14845c0,-6.15692 4.99113,-11.14845 11.14859,-11.14845z" fill="#ffffff"></path></clipPath></defs><g><g opacity="0.12"><path d="M11.1477,3.71565c4.10497,0 7.43239,3.32737 7.43239,7.43198c0,4.10461 -3.32742,7.43246 -7.43239,7.43246c-4.10497,0 -7.43239,-3.32785 -7.43239,-7.43246c0,-4.10461 3.32742,-7.43198 7.43239,-7.43198z" fill="currentColor" fill-opacity="1"></path></g><g><path d="M18.85887,18.90339v0l0.92836,-1.16062v0l3.71689,2.97308v0l-0.92974,1.16062v0z" fill="currentColor" fill-opacity="1"></path></g><g><path d="M11.1477,-0.00082c6.15677,0 11.14859,4.99153 11.14859,11.14845c0,6.1574 -4.99182,11.14845 -11.14859,11.14845c-6.15746,0 -11.14859,-4.99105 -11.14859,-11.14845c0,-6.15692 4.99113,-11.14845 11.14859,-11.14845z" fill-opacity="0" fill="#ffffff" stroke-dashoffset="0" stroke-dasharray="" stroke-linejoin="miter" stroke-linecap="butt" stroke-opacity="1" stroke="currentColor" stroke-miterlimit="50" stroke-width="4" clip-path="url(&quot;#ClipPath3886&quot;)"></path></g><g><g><path d="M11.1477,-0.00082c6.15677,0 11.14859,4.99153 11.14859,11.14845c0,6.1574 -4.99182,11.14845 -11.14859,11.14845c-6.15746,0 -11.14859,-4.99105 -11.14859,-11.14845c0,-6.15692 4.99113,-11.14845 11.14859,-11.14845z" fill-opacity="0" fill="#ffffff" stroke-dashoffset="0" stroke-dasharray="" stroke-linejoin="miter" stroke-linecap="butt" stroke-opacity="1" stroke="currentColor" stroke-miterlimit="50" stroke-width="4" clip-path="url(&quot;#ClipPath3895&quot;)"></path></g><g><path d="M18.85887,18.90339v0l0.92836,-1.16062v0l3.71689,2.97308v0l-0.92974,1.16062v0z" fill="currentColor" fill-opacity="1"></path></g><g opacity="0.12"><path d="M11.1477,3.71565c4.10497,0 7.43239,3.32737 7.43239,7.43198c0,4.10461 -3.32742,7.43246 -7.43239,7.43246c-4.10497,0 -7.43239,-3.32785 -7.43239,-7.43246c0,-4.10461 3.32742,-7.43198 7.43239,-7.43198z" fill="currentColor" fill-opacity="1"></path></g></g></g></symbol>
+				<symbol viewBox="0 0 24 23" id="svg-search"><defs><clipPath id="ClipPath3886"><path d="M11.1477,-0.00082c6.15677,0 11.14859,4.99153 11.14859,11.14845c0,6.1574 -4.99182,11.14845 -11.14859,11.14845c-6.15746,0 -11.14859,-4.99105 -11.14859,-11.14845c0,-6.15692 4.99113,-11.14845 11.14859,-11.14845z" fill="#ffffff"></path></clipPath><clipPath id="ClipPath3895"><path d="M11.1477,-0.00082c6.15677,0 11.14859,4.99153 11.14859,11.14845c0,6.1574 -4.99182,11.14845 -11.14859,11.14845c-6.15746,0 -11.14859,-4.99105 -11.14859,-11.14845c0,-6.15692 4.99113,-11.14845 11.14859,-11.14845z" fill="#ffffff"></path></clipPath></defs><g><g opacity="0.12"><path d="M11.1477,3.71565c4.10497,0 7.43239,3.32737 7.43239,7.43198c0,4.10461 -3.32742,7.43246 -7.43239,7.43246c-4.10497,0 -7.43239,-3.32785 -7.43239,-7.43246c0,-4.10461 3.32742,-7.43198 7.43239,-7.43198z" fill="currentColor" fill-opacity="1"></path></g><g><path d="M18.85887,18.90339v0l0.92836,-1.16062v0l3.71689,2.97308v0l-0.92974,1.16062v0z" fill="currentColor" fill-opacity="1"></path></g><g><path d="M11.1477,-0.00082c6.15677,0 11.14859,4.99153 11.14859,11.14845c0,6.1574 -4.99182,11.14845 -11.14859,11.14845c-6.15746,0 -11.14859,-4.99105 -11.14859,-11.14845c0,-6.15692 4.99113,-11.14845 11.14859,-11.14845z" fill-opacity="0" fill="#ffffff" stroke-dashoffset="0" stroke-dasharray="" stroke-linejoin="miter" stroke-linecap="butt" stroke-opacity="1" stroke="currentColor" stroke-miterlimit="50" stroke-width="4" clip-path="url(&quot;#ClipPath3886&quot;)"></path></g><g><g><path d="M11.1477,-0.00082c6.15677,0 11.14859,4.99153 11.14859,11.14845c0,6.1574 -4.99182,11.14845 -11.14859,11.14845c-6.15746,0 -11.14859,-4.99105 -11.14859,-11.14845c0,-6.15692 4.99113,-11.14845 11.14859,-11.14845z" fill-opacity="0" fill="#ffffff" stroke-dashoffset="0" stroke-dasharray="" stroke-linejoin="miter" stroke-linecap="butt" stroke-opacity="1" stroke="currentColor" stroke-miterlimit="50" stroke-width="4" clip-path="url(&quot;#ClipPath3895&quot;)"></path></g><g><path d="M18.85887,18.90339v0l0.92836,-1.16062v0l3.71689,2.97308v0l-0.92974,1.16062v0z" fill="currentColor" fill-opacity="1"></path></g><g opacity="0.12"><path d="M11.1477,3.71565c4.10497,0 7.43239,3.32737 7.43239,7.43198c0,4.10461 -3.32742,7.43246 -7.43239,7.43246c-4.10497,0 -7.43239,-3.32785 -7.43239,-7.43246c0,-4.10461 3.32742,-7.43198 7.43239,-7.43198z" fill="currentColor" fill-opacity="1"></path></g></g></g></symbol>
 
 				<symbol viewBox="0 0 7 18" id="svg-arrow-down"><g><g><path d="M2.99884,-0.00048h1.0003v15.29257l1.64642,-1.64644l0.70699,0.70715l-2.14649,2.14653l0.14658,0.14658l-0.70699,0.70715l-0.14666,-0.14666l-0.14666,0.14666l-0.70699,-0.70715l0.14658,-0.14658l-2.14649,-2.14653l0.70699,-0.70715l1.64642,1.64644z" fill="currentColor" fill-opacity="1"></path></g></g></symbol>
 
 				<symbol viewBox="0 0 7 18"><g><g><path d="M3.64602,0.64585l0.70699,0.70715l-0.14687,0.14685l2.14609,2.14578l-0.70699,0.70715l-1.64642,-1.64656v15.29316h-0.99961v-15.29278l-1.64642,1.64618l-0.70699,-0.70715l2.14642,-2.14611l-0.14651,-0.14652l0.7063,-0.70715l0.147,0.14698z" fill="currentColor" fill-opacity="1"></path></g></g></symbol>
+
+				<symbol viewBox="0 0 21 15" id="svg-burger"><g><g><path d="M-0.00108,14.99923v0v-0.99993v0h21.00011v0v0.99993v0z" fill="currentColor" fill-opacity="1"></path></g><g><path d="M-0.00108,7.99926v0v-0.99993v0h21.00011v0v0.99993v0z" fill="currentColor" fill-opacity="1"></path></g><g><path d="M-0.00108,0.99929v0v-0.99993v0h21.00011v0v0.99993v0z" fill="currentColor" fill-opacity="1"></path></g></g></symbol>
+
+				<symbol viewBox="0 0 12 12" id="svg-close"><g><g><path d="M0.29281,1.70679l1.41426,-1.41418l4.29288,4.29293l4.29293,-4.29293l1.41415,1.41418l-4.2929,4.29295l4.2929,4.29295l-1.41415,1.41418l-4.29293,-4.29293l-4.29288,4.29293l-1.41426,-1.41418l4.29295,-4.29295z" fill="currentColor" fill-opacity="1"></path></g></g></symbol>
 			</svg>
 			<!-- end svg-sprite -->
+
+			<div id="overlay"></div>
+
+			<div class="popup callback-popup">
+				<a href="#" class="popup__close">
+					<svg>
+						<use xlink:href="#svg-close"></use>
+					</svg>
+				</a>
+				<div class="callback-popup__title">
+					Перезвоните мне
+				</div>
+				<div class="callback-popup__content">
+					<form action="#">
+						<input type="text" class="popup__input" placeholder="Ваше имя:">
+						<input type="text" class="popup__input" placeholder="Телефон:">
+
+						<input type="submit" class="popup__submit" value="Перезвоните мне">
+					</form>
+					<div class="agree">
+						Нажимая на кнопку, я даю согласие на обработку 
+						<a href="#">персональных данных</a>
+					</div>
+				</div>
+			</div>
 			
 		</footer>
 	</div><!-- end wrapper -->
