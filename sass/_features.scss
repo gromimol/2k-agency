@@ -1,0 +1,28 @@
+/*features*/ 
+.features{
+	padding: 80px 0;
+	.title{
+		margin-bottom: 4.6875em;
+	}
+}
+.feature__list{
+	border: 1px solid var(--border-color);
+	li{
+		width: 25%;
+		background-color: #f9f9f9;
+		&:not(:last-child){
+			border-right: 1px solid var(--border-color);
+		}
+	}
+}
+.features__item{
+	height: 100%;
+}
+.features__text{
+	font-size: 1.125rem;
+	font-weight: 200;
+	line-height: 1.66;
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+}

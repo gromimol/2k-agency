@@ -9,28 +9,28 @@
 		position: absolute;
 		top: -5.5em;
 		right: 12em;
-		width: 3.125em;
-		height: 3.125em;
-		border-radius: 50%;
-		border: 1px solid #d9d9d9;
-		color: #415061;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		cursor: pointer;
-		z-index: 2;
-		transition: all .3s;
-		&:hover{
-			color: #fff;
-			background-color: var(--grey-dark);
-		}
-		svg{
-			width: 8px;
-			height: 15px;
-		}
-		&.prev-arrow{
-			right: 16em;
-		}
+	}
+	
+}
+.slick-arrow{
+	width: 3.125em;
+	height: 3.125em;
+	border-radius: 50%;
+	border: 1px solid #d9d9d9;
+	color: #415061;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	z-index: 2;
+	transition: all .3s;
+	&:hover{
+		color: #fff;
+		background-color: var(--grey-dark);
+	}
+	svg{
+		width: 8px;
+		height: 15px;
 	}
 }
 .product-slider__item{

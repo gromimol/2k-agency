@@ -1,0 +1,27 @@
+/*about-block*/ 
+.about-block{
+	padding: 12em 0;
+	background: #222933 url('../img/bg/about_bg.png') 100% top no-repeat;
+	background-size: cover;
+	color: #fff;
+	h2{
+		font-size: 2.8rem;
+		line-height: 1.2;
+		margin-bottom: 1em;
+	}
+	p{
+		font-weight: 200;
+		margin-bottom: 1.5em;
+		line-height: 2;
+		b{
+			font-weight: 400;
+			font-size: 1.125em;
+		}
+	}
+	.container{
+		height: 100%;
+	}
+}
+.about-block__descr{
+	width: 58%;
+}
