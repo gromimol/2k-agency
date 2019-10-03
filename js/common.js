@@ -64,6 +64,34 @@ $(document).ready(function () {
 		$('.catalog-block__submenu').removeClass('active');
 	});
 
+	//  Псевдо селект
+	$('.select').on('click','.placeholder',function(){
+		var parent = $(this).closest('.select');
+		if ( ! parent.hasClass('is-open')){
+			parent.addClass('is-open');
+			$('.select.is-open').not(parent).removeClass('is-open');
+		}else{
+			parent.removeClass('is-open');
+		}
+	}).on('click','ul>li',function(){
+		var parent = $(this).closest('.select');
+		parent.removeClass('is-open').find('.placeholder-text').text( $(this).text() );
+		parent.find('input[type=hidden]').attr('value', $(this).attr('data-value') );
+	});
+
+	// Filter показать - скрыть
+	$('.js-filter-btn').on('click',function () {
+		$(this).toggleClass('hide-filter');
+		$('.js-filter').slideToggle();
+	})
+
+	// dropdown в сайдбаре
+	$('.drop-link').on('click', 'a', function (e) {
+		e.preventDefault();
+
+		$(this).closest('.drop-link').toggleClass('active');
+	})
+
 	// slider
 	$('.main-slider').slick({
 		dots: true,

@@ -5,6 +5,25 @@
 	background:transparent url('../img/bg/banner-bg.jpg') left top no-repeat;
 	background-size: cover;
 	position: relative;
+	&--lt{
+		width: 100%;
+		height: 25em;
+		.banner__top{
+			margin-bottom: 1.5em;
+		}
+		.banner__content{
+			padding: 2.5em;
+		}
+		.gods-name{
+			font-size: 2.25rem;
+		}
+		.banner__price{
+			margin-bottom: 2em;
+		}
+		.btn{
+			padding: 1em 2.5em;
+		}
+	}
 	.bage{
 		bottom: 8em;
 	}
@@ -30,8 +49,8 @@
 }
 .old-price{
 	font-size: .9375rem;
-	font-weight: 200;
-	color: rgba(#222121, .5);
+	font-weight: 300;
+	color: var(--grey-dark);
 	text-decoration: line-through;
 	margin-bottom: .5em;
 }
