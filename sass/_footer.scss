@@ -1,7 +1,53 @@
 /*Footer*/ 
 .footer{
 	position: relative;
+	background-color: var(--black-bg);
+	color: #fff;
 	z-index: 1;
+	a{
+		color: #fff;
+	}
+}
+.footer__left{
+	width: 260px;
+}
+.footer__right{
+	width: calc(100% - 260px);
+}
+.footer__contact{
+	h4{
+		font-size: 1.5rem;
+		font-weight: 500;
+		margin-bottom: 1em;
+	}
+}
+.address,
+.footer__contact__item{
+	font-size: 1.125rem;
+	line-height: 1.6;
+}
+.footer__contact__item{
+	display: flex;
+	flex-direction: column;
+	margin-top: 1em;
+	a{
+		&:hover{
+			color: var(--blue);
+		}
+	}
+}
+.footer__options{
+	h4{
+		font-size: 1.5rem;
+		font-weight: 200;
+		margin-bottom: .75em;
+	}
+	.social{
+		margin-bottom: 3em;
+	}
+}
+.copyright{
+	font-size: .875rem;
 }
 #overlay{
 	position: fixed;

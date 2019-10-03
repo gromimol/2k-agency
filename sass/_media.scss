@@ -299,6 +299,23 @@
 	.more{
 		font-size: 14px;
 	}
+	.footer__contact h4,
+	.footer__options h4{
+		font-size: 18px;
+		margin-bottom: 15px;
+	}
+	.footer__left{
+		width: 180px;
+	}
+	.footer__right{
+		width: calc(100% - 180px);
+	}
+	.address, .footer__contact__item{
+		font-size: 12px;
+	}
+	.copyright{
+		font-size: 10px;
+	}
 }
 /*768*/ 
 
@@ -541,6 +558,26 @@
 	.features__text{
 		font-size: 16px;
 		font-weight: 400;
+	}
+	.footer{
+		.container{
+			flex-direction: column;
+		}
+	}
+	.footer__left{
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	.footer__right{
+		width: 100%;
+		flex-direction: column;
+		text-align: center;
+	}
+	.footer__contact{
+		margin-bottom: 30px;
+	}
+	.social{
+		justify-content: center;
 	}
 }
 /*568*/ 
