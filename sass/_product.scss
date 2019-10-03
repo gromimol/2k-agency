@@ -9,6 +9,9 @@
 		position: absolute;
 		top: -5.5em;
 		right: 12em;
+		&.prev-arrow{
+			right: 16em;
+		}
 	}
 	
 }
