@@ -1,6 +1,11 @@
 /*catalog-block*/ 
+.catalog-block{
+	background-color: var(--grey-bg);
+	padding: 60px 0;
+}
 .catalog-block__list{
 	position: relative;
+
 }
 
 .catalog-block__item{

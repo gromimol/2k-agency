@@ -12,6 +12,8 @@
 	--grey: #dfe5ed;
 	--grey-dark: #717b87;
 	--green: #00e991;
+
+	--border-color: #dfe5ed;
 }
 html, body{
 	min-height: 100%;
@@ -129,6 +131,9 @@ a{
 	border-radius: 0 20px 20px 0;
 	font-family: var(--ptsans);
 	padding: .6em 2em;
+	&--green{
+		background-color: var(--green);
+	}
 }
 .ico{
 	display: inline-block;
@@ -158,10 +163,11 @@ h3{
 	font-size: .875rem;
 	font-family: var(--ptsans);
 	text-transform: uppercase;
-	text-decoration: underline;
+	border-bottom: 1px dashed var(--black);
 	&:hover{
 		text-decoration: none;
 		color: var(--blue);
+		border-color:transparent;
 	}
 }
 .brown-bg{
@@ -172,6 +178,9 @@ h3{
 }
 .grey-bg{
 	background-color: #dfe5ed;
+}
+.grey-bg-light{
+	background-color: var(--grey-bg);
 }
 .grey-dark-bg{
 	background-color: #717b87;

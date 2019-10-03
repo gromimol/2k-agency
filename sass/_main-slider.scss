@@ -1,4 +1,7 @@
 /*main-slider*/ 
+.main-slider-section{
+	background-color: var(--grey-bg);
+}
 .main-slider{
 	.slick-list{
 		padding-bottom: 4.5em;
@@ -37,7 +40,7 @@
 	}
 }
 .slick-dotted.slick-slider{
-	margin-bottom: 30px;
+	margin-bottom: 0;
 }
 .main-slider__item{
 	height: 36.4375em;
