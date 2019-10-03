@@ -144,6 +144,19 @@
 	.news-slider__content h3{
 		font-size: 1.9rem;
 	}
+	.sort__item{
+		font-size: 1rem;
+	}
+	.product-list .product-slider__item{
+		width: 50%;
+	}
+	.product-data{
+		display: none;
+	}
+	.product-slider__item:hover .product-slider__row .to-cart{
+		opacity: 1;
+		visibility: visible;
+	}
 }
 /*1200*/ 
 
@@ -207,6 +220,15 @@
 		font-size: 2.2rem;
 		font-weight: 300;
 	}
+	.sort__item{
+		padding-left: .5em;
+	}
+	.sort__item span{
+		font-size: .85rem;
+	}
+	.sort-input{
+		margin: 0 .5em;
+	}
 }
 /*1024*/ 
 @media(max-width: 1023px){
@@ -227,6 +249,71 @@
 	}
 	.features__text{
 		font-size: 1.6rem;
+	}
+	.sort-row{
+		flex-wrap: wrap;
+		.filter-btn{
+			width: 100%;
+			height: 40px;
+			font-size: 14px;
+			justify-content: center;
+		}
+	}
+	.select{
+		font-size: 14px;
+		max-width: none;
+		border: 1px solid var(--border-color);
+		margin-bottom: 15px;
+	}
+	.select .placeholder:after{
+		border-right: none;
+	}
+	.sort__item{
+		width: 100%;
+		margin-bottom: 10px;
+		border-right: none;
+		span{
+			font-size: 14px;
+			display: inline-block;
+			width: 80px;
+			text-align: center;
+		}
+	}
+	.sort-input{
+		font-size: 14px;
+		& + span{
+			width: 20px;
+		}
+	}
+	.filter__item--lg{
+		width: auto;
+	}
+	.filter__item{
+		width: 50%;
+		margin-bottom: 30px;
+	}
+	.filter__item__title{
+		font-size: 16px;
+	}
+	.checkbox label, .radio label{
+		font-size: 14px;
+	}
+	.filter{
+		& > .flex{
+			flex-wrap: wrap;
+		}
+	}
+	.filter-menu{
+		max-height: 140px;
+	}
+	.catalog-content__aside{
+		display: none;
+	}
+	.catalog-content__body{
+		width: 100%;
+	}
+	.product-list .product-slider__item{
+		width: 33.3333%;
 	}
 }
 /*1023*/ 
@@ -485,6 +572,15 @@
 	.news-slider__content p{
 		height: 4.5em;
 	}
+	.product-list .product-slider__item{
+		width: 50%;
+	}
+	.paginator li a{
+		width: 30px;
+		height: 30px;
+		margin-bottom: 5px;
+		font-size: 14px;
+	}
 }
 /*767*/ 
 
@@ -579,6 +675,10 @@
 	.social{ 
 		justify-content: center;
 	}
+	.filter__item{
+		padding-left: 0;
+		width: 100%;
+	}
 }
 /*568*/ 
 
@@ -589,6 +689,9 @@
 	.news-slider__item{
 		width: 300px;
 		height: 250px;
+	}
+	.product-list .product-slider__item{
+		width: 100%;
 	}
 }
 /*420*/ 
