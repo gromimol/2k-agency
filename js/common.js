@@ -45,6 +45,25 @@ $(document).ready(function () {
 		$('#overlay').hide();
 	});
 
+	// подменю в блоке каталога
+	$('.catalog-block__item').on('click', function () {
+		$('.catalog-block__submenu').addClass('active');
+
+		var title = $(this).find('.catalog-block__title').text();
+		var img = $(this).find('.catalog-block__img').attr('src');
+
+		$('.catalog-block__submenu').find('.catalog-block__title').text(title);
+		$('.catalog-block__submenu').find('.catalog-block__img').attr('src', img);
+	});
+
+	$('.js-close-submenu').on('click', function (e) {
+		e.preventDefault();
+
+
+
+		$('.catalog-block__submenu').removeClass('active');
+	});
+
 	// slider
 	$('.main-slider').slick({
 		dots: true

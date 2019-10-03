@@ -139,6 +139,43 @@ a{
 		height: 100%;
 	}
 }
+h1{
+	font-size: 1rem;
+	font-weight: 700;
+}
+h2{
+	font-size: 2.25rem;
+	font-weight: 500;
+}
+h3{
+	font-size: 2rem;
+	font-weight: 500;
+}
+.title{
+	margin-bottom: 3em;
+}
+.title-link{
+	font-size: .875rem;
+	font-family: var(--ptsans);
+	text-transform: uppercase;
+	text-decoration: underline;
+	&:hover{
+		text-decoration: none;
+		color: var(--blue);
+	}
+}
+.brown-bg{
+	background-color: #d9d9d9;
+}
+.brown-dark-bg{
+	background-color: #d0d1d2;
+}
+.grey-bg{
+	background-color: #dfe5ed;
+}
+.grey-dark-bg{
+	background-color: #717b87;
+}
 
 ::-webkit-input-placeholder {color: var(--black-light);font-family: var(--ptsans);font-size: 16px;  }
 ::-moz-placeholder          {color: var(--black-light);font-family: var(--ptsans);font-size: 16px;  } /* Firefox 19+ */

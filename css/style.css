@@ -270,6 +270,42 @@ a {
     width: 100%;
     height: 100%; }
 
+h1 {
+  font-size: 1rem;
+  font-weight: 700; }
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: 500; }
+
+h3 {
+  font-size: 2rem;
+  font-weight: 500; }
+
+.title {
+  margin-bottom: 3em; }
+
+.title-link {
+  font-size: .875rem;
+  font-family: var(--ptsans);
+  text-transform: uppercase;
+  text-decoration: underline; }
+  .title-link:hover {
+    text-decoration: none;
+    color: var(--blue); }
+
+.brown-bg {
+  background-color: #d9d9d9; }
+
+.brown-dark-bg {
+  background-color: #d0d1d2; }
+
+.grey-bg {
+  background-color: #dfe5ed; }
+
+.grey-dark-bg {
+  background-color: #717b87; }
+
 ::-webkit-input-placeholder {
   color: var(--black-light);
   font-family: var(--ptsans);
@@ -1088,6 +1124,127 @@ a {
   font-weight: 300;
   font-size: 1.5rem; }
 
+/*catalog-block*/
+.catalog-block__list {
+  position: relative; }
+
+.catalog-block__item {
+  width: 33.333%;
+  height: 20em;
+  position: relative;
+  padding: 3.75em 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: all .3s;
+  transition: all .3s; }
+  .catalog-block__item:hover {
+    opacity: .8; }
+
+.arrow {
+  width: 2.625em;
+  height: 2.625em;
+  border-radius: 50%;
+  border: 1px solid #a1a6ad;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--black);
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  -webkit-transition: all .3s;
+  transition: all .3s; }
+  .arrow:hover {
+    color: var(--blue);
+    background-color: #fff;
+    border-color: #fff; }
+  .arrow svg {
+    width: 50%;
+    height: 50%; }
+
+.catalog-block__title {
+  font-size: 2.25rem;
+  font-weight: 200;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .catalog-block__title::after {
+    content: '';
+    width: 20px;
+    height: 1px;
+    background-color: #a1a6ad;
+    margin-left: .5em;
+    -webkit-transform: translateY(0.1em);
+            transform: translateY(0.1em); }
+
+.catalog-block__img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 11em; }
+  .catalog-block__img--right {
+    right: auto;
+    left: 0; }
+
+.catalog-block__submenu {
+  position: absolute;
+  padding: 3.75em;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  z-index: 10; }
+  .catalog-block__submenu.active {
+    visibility: visible;
+    opacity: 1; }
+
+.catalog-block__submenu__top {
+  margin-bottom: 3em; }
+  .catalog-block__submenu__top .catalog-block__img {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-left: 3em; }
+
+.catalog-block__submenu__menu {
+  -webkit-column-count: 5;
+          column-count: 5;
+  margin-bottom: 3em; }
+  .catalog-block__submenu__menu li {
+    font-size: 1rem;
+    font-family: var(--ptsans);
+    margin-bottom: 3em; }
+    .catalog-block__submenu__menu li a:hover {
+      color: var(--blue); }
+
 /*Footer*/
 .footer {
   position: relative;
@@ -1271,10 +1428,21 @@ a {
   .callback-popup__title {
     font-size: 20px; }
 
-  .popup .agree {
+  .popup .agree,
+  .title-link {
     font-size: 14px; }
-    .popup .agree a {
-      display: block; } }
+    .popup .agree a,
+    .title-link a {
+      display: block; }
+
+  .title {
+    margin-bottom: 5em; }
+
+  h1 {
+    font-size: 4.5rem; }
+
+  h2 {
+    font-size: 3rem; } }
 /*1200*/
 @media (max-width: 1024px) {
   .popup__close {
@@ -1287,7 +1455,28 @@ a {
     padding: 20px 15px; }
 
   .btn {
-    font-size: 14px; } }
+    font-size: 14px; }
+
+  .catalog-block__title {
+    font-size: 2.7rem; }
+
+  .catalog-block__submenu__top .catalog-block__img {
+    width: 10em;
+    height: 10em; }
+
+  .catalog-block__submenu__menu {
+    -webkit-column-count: 4;
+            column-count: 4;
+    -webkit-column-gap: 20px;
+            column-gap: 20px; }
+    .catalog-block__submenu__menu li {
+      font-size: 1.5rem;
+      line-height: 1.3;
+      margin-bottom: 1.5em; }
+
+  .arrow {
+    width: 3.3em;
+    height: 3.3em; } }
 /*1024*/
 @media (max-width: 767px) {
   .header__top__contact__item,
@@ -1388,7 +1577,36 @@ a {
     font-size: 16px;
     background-color: #fff;
     padding: 3px 6px;
-    border-radius: 5px; } }
+    border-radius: 5px; }
+
+  .catalog-block {
+    padding-top: 30px; }
+
+  .title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .title h2 {
+      font-size: 30px;
+      margin-bottom: 15px; }
+
+  .catalog-block__item {
+    width: 50%;
+    height: 25em; }
+
+  .catalog-block__submenu__menu li {
+    font-size: 14px; }
+
+  .catalog-block__title {
+    font-size: 3.4rem; }
+
+  .arrow {
+    width: 4em;
+    height: 4em; } }
 /*767*/
 @media (max-width: 568px) {
   .header-cart__total,
@@ -1409,6 +1627,32 @@ a {
     font-size: 5rem; }
 
   .main-slide__text {
-    font-size: 3rem; } }
+    font-size: 3rem; }
+
+  .catalog-block__submenu__menu {
+    -webkit-column-count: 2;
+            column-count: 2; }
+
+  .catalog-block__title {
+    font-size: 24px; }
+
+  .catalog-block__submenu__top .catalog-block__img {
+    width: 14em;
+    height: 14em; }
+
+  .arrow {
+    width: 30px;
+    height: 30px; }
+
+  .catalog-block__submenu {
+    padding: 20px 30px; }
+
+  .catalog-block__submenu__menu {
+    margin-bottom: 30px; } }
 /*568*/
+@media (max-width: 420px) {
+  .catalog-block__item {
+    height: 32em; } }
+/*420*/
+
 /*# sourceMappingURL=style.css.map */
