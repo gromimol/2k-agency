@@ -66,7 +66,8 @@ $(document).ready(function () {
 
 	// slider
 	$('.main-slider').slick({
-		dots: true
+		dots: true,
+		arrows: false
 	});
 
 	$('.product-slider').slick({
