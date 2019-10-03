@@ -1,0 +1,28 @@
+/*breadcrumbs*/ 
+.breadcrumbs-block{
+	border-bottom: 1px solid var(--border-color);
+	font-size: .875rem;
+	padding: 2em 0;
+}
+.breadcrumbs{
+	li{
+		display: flex;
+		align-items: center;
+		&:not(:last-child){
+			margin-right: .2em;
+			&::after{
+				content: '-';
+				margin-left: .2em;
+			}
+		}
+		&:last-child{
+			color: var(--blue);
+			cursor: default;
+		}
+		a{
+			&:hover{
+				color: var(--blue);
+			}
+		}
+	}
+}

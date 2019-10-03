@@ -721,7 +721,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 13em;
+  width: 16em;
   padding-right: 1em; }
   .logo img {
     width: 100%; }
@@ -734,7 +734,7 @@ p {
       -ms-flex-positive: 1;
           flex-grow: 1;
   width: 100%;
-  max-width: 1410px;
+  max-width: 1360px;
   margin: 0 auto;
   position: relative; }
 
@@ -858,11 +858,8 @@ p {
   -webkit-transition: all .3s;
   transition: all .3s; }
   .search-btn:hover {
-    background-color: var(--blue);
+    background-color: var(--grey-light);
     color: #fff; }
-  .search-btn svg {
-    width: 20px;
-    height: 20px; }
 
 .header-cart {
   -webkit-box-align: center;
@@ -1659,6 +1656,30 @@ p {
   -o-object-fit: cover;
      object-fit: cover; }
 
+/*breadcrumbs*/
+.breadcrumbs-block {
+  border-bottom: 1px solid var(--border-color);
+  font-size: .875rem;
+  padding: 2em 0; }
+
+.breadcrumbs li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .breadcrumbs li:not(:last-child) {
+    margin-right: .2em; }
+    .breadcrumbs li:not(:last-child)::after {
+      content: '-';
+      margin-left: .2em; }
+  .breadcrumbs li:last-child {
+    color: var(--blue);
+    cursor: default; }
+  .breadcrumbs li a:hover {
+    color: var(--blue); }
+
 /*Footer*/
 .footer {
   position: relative;
@@ -1667,6 +1688,8 @@ p {
   z-index: 1; }
   .footer a {
     color: #fff; }
+  .footer .logo {
+    max-width: 13em; }
 
 .footer__left {
   width: 260px; }
