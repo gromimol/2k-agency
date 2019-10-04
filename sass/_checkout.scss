@@ -1,6 +1,20 @@
 /*checkout*/ 
 .checkout{
-
+	.title{
+		padding-bottom: 3em;
+		position: relative;
+		&::after{
+			content: '';
+			width: 50%;
+			max-width: 500px;
+			height: 2px;
+			background-color: #0081c6;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
 }
 .checkout-form{
 	h4{

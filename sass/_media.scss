@@ -533,6 +533,12 @@
 	.features-block__text{
 		font-size: 1.4rem;
 	}
+	.empty-cart__title{
+		font-size: 30px;
+	}
+	.empty-cart__notice{
+		font-size: 16px;
+	}
 }
 /*768*/ 
 
@@ -1028,6 +1034,10 @@
 	}
 	.clients__left h2{
 		font-size: 20px;
+	}
+	.callback-form__content .btn,
+	.empty-cart__btn .btn{
+		font-size: 15px;
 	}
 }
 /*360*/ 
