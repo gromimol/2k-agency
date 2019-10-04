@@ -220,6 +220,9 @@ p{
 }
 .section{
 	padding: 60px 0;
+	&--top{
+		padding-top: 0 !important;
+	}
 }
 
 .social{

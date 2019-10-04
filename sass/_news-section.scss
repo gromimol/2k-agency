@@ -13,19 +13,7 @@
 		}
 	}
 }
-.news-section{
-	&--using{
-		.news-slider{
-			.slick-arrow{
-				right: 0;
-				&.prev-arrow{
-					right: 4em;
-				}
-			}
-		}
-		
-	}
-}
+
 .news-slider__item{
 	width: 22em;
 	height: 21.3125em;
