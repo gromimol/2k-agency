@@ -1,7 +1,5 @@
 /*news-section*/ 
-.news-section{
 
-}
 .news-slider{
 	.slick-list{
 		padding-bottom: 2em;
@@ -13,6 +11,19 @@
 		&.prev-arrow{
 			right: 16em;
 		}
+	}
+}
+.news-section{
+	&--using{
+		.news-slider{
+			.slick-arrow{
+				right: 0;
+				&.prev-arrow{
+					right: 4em;
+				}
+			}
+		}
+		
 	}
 }
 .news-slider__item{

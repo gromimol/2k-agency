@@ -1,0 +1,43 @@
+/*order*/ 
+.order{
+	background:#717b87 url('../img/bg/order_bg.jpg') left top no-repeat;
+	background-size: cover;
+	color: #fff;
+}
+.order-row{
+	&:not(:last-child){
+		margin-bottom: 20px;
+	}
+	.order-input{
+		width: 31%;
+	}
+	textarea.order-input{
+		width: 65.5%;
+	}
+	.btn{
+		font-size: 1.125rem;
+		padding-left: 5em;
+		padding-right: 5em;
+		transform: translateY(50%);
+	}
+}
+.order-input{
+	display: block;
+	width: 100%;
+	border: none;
+	border-bottom: 2px solid #fff;
+	color: #fff;
+	background-color: transparent;
+	font-size: 16px;
+	height: 45px;
+	appearance: none;
+	outline: none;
+	transition: all .3s;
+	&:focus{
+		border-color: var(--blue);
+	}
+	&::-webkit-input-placeholder {color: #fff;font-family: var(--ptsans);font-size: 16px;  }
+	&::-moz-placeholder          {color: #fff;font-family: var(--ptsans);font-size: 16px;  } /* Firefox 19+ */
+	&:-moz-placeholder           {color: #fff;font-family: var(--ptsans);font-size: 16px;  } /* Firefox 18- */
+	&:-ms-input-placeholder      {color: #fff;font-family: var(--ptsans);font-size: 16px;  }
+}

@@ -1,0 +1,42 @@
+/*features-block*/ 
+.features-block{
+	background:#0081c6 url('../img/bg/features-block_bg.jpg') left top no-repeat;
+	background-size: cover;
+	color: #fff;
+}
+.features-block__list{
+	counter-reset: number;
+	li{
+		width: 25%;
+		text-align: center;
+	}
+}
+.features-block__number{
+	font-size: 1.875rem;
+	width: 4.66em;
+	height: 4.66em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto 1.5em;
+	position: relative;
+	&::before{
+		content:'0'counter(number);
+		counter-increment: number;
+		font-weight: 500;
+		display: block;
+	}
+	&::after{
+		content: '';
+		width: 80%;
+		height: 80%;
+		border: 1px solid #fff;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) rotate(45deg);
+	}
+}
+.features-block__text{
+	font-size: 1.125rem;
+}

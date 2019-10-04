@@ -239,6 +239,18 @@
 	.sort-input{
 		margin: 0 .5em;
 	}
+	.service-page__slider{
+		padding-bottom: 60px;
+	}
+	.service-page__slider__item{
+		height: 300px;
+	}
+	.service-page__slider__title{
+		font-size: 2.4rem;
+	}
+	.service-page__slider__descr{
+		font-size: 1.4rem;
+	}
 }
 /*1024*/ 
 @media(max-width: 1023px){
@@ -425,6 +437,41 @@
 			font-size: 1.4em;
 		}
 	}
+	.service-page__slider__item{
+		height: 240px;
+	}
+	.service-page__slider__title{
+		font-size: 3.4rem;
+	}
+	.service-page__slider__descr{
+		font-size: 2rem;
+	}
+	.service-page-descr__text{
+		width: 57%;
+		h3{
+			font-size: 2rem;
+		}
+		p{
+			font-size: 1.4rem;
+		}
+	}
+	.service-page-descr__img{
+		width: 40%;
+	}
+	.price-section{
+		background-size: 40%;
+	}
+	.price-table{
+		font-size: 1.4rem;
+	}
+	.title{
+		p{
+			font-size: 1.7rem;
+		}
+	}
+	.features-block__text{
+		font-size: 1.4rem;
+	}
 }
 /*768*/ 
 
@@ -532,6 +579,12 @@
 			font-size: 30px;
 			margin-bottom: 15px;
 		}
+		h3{
+			font-size: 24px;
+		}
+		p{
+			font-size: 14px;
+		}
 	}
 	.catalog-block__item{
 		width: 50%;
@@ -603,6 +656,67 @@
 		margin-bottom: 5px;
 		font-size: 14px;
 	}
+	.service-page-descr{
+		position: relative;
+		padding: 40px 0;
+	}
+	.service-page-descr__img{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		&::before{
+			content: '';
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			background-color: rgba(#000, .6);
+		}
+		img{
+			object-fit: cover;
+		}
+	}
+	.service-page-descr__text{
+		width: 100%;
+		position: relative;
+		color: #fff;
+		z-index: 1;
+		h3{
+			font-size: 24px;
+			margin-bottom: 1em;
+		}
+		p{
+			font-size: 16px;
+		}
+	}
+	.price-table-container{
+		overflow-x: auto;
+	}
+	.price-table{
+		min-width: 760px;
+		font-size: 12px;
+	}
+	.order-row{
+		flex-direction: column;
+		margin-bottom: 0;
+		.order-input,
+		textarea.order-input{
+			width: 100%;
+			margin-bottom: 20px;
+
+		}
+		.btn{
+			font-size: 16px;
+		}	
+	}
+	textarea.order-input{
+		resize: none;
+		height: 100px;
+	}
+
 }
 /*767*/ 
 
@@ -720,6 +834,29 @@
 		&--right{
 			margin-left: 0;
 		}
+	}
+	.service-page__slider__title{
+		font-size: 20px;
+	}
+	.service-page__slider__descr{
+		font-size: 14px;
+	}
+	.features-block__list{
+		flex-wrap: wrap;
+		margin: 0 -5px;
+		li{
+			width: 50%;
+			padding: 0 5px;
+			margin-bottom: 30px;
+		}
+	}
+	.features-block__number{
+		width: 80px;
+		height: 80px;
+		font-size: 18px;
+	}
+	.features-block__text{
+		font-size: 14px;
 	}
 }
 /*568*/ 
