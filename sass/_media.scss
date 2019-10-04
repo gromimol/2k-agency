@@ -398,6 +398,17 @@
 	.cart-name__descr p{
 		font-size: 1.125rem;
 	}
+	.contact{
+		.container{
+			flex-wrap: wrap;
+		}
+	}
+	.contact__address{
+		margin-bottom: 40px;
+	}
+	.contact__form{
+		margin: 0 auto;
+	}
 }
 /*1023*/ 
 
@@ -539,6 +550,10 @@
 	.empty-cart__notice{
 		font-size: 16px;
 	}
+	.footer .logo{
+		width: 150px;
+		max-width: none;
+	}
 }
 /*768*/ 
 
@@ -547,6 +562,9 @@
 	.header__main .menu-btn,
 	.header__main .logo{
 		display: none;
+	}
+	.footer .logo{
+		width: 180px;
 	}
 	.header__top__mobile{
 		display: flex;
