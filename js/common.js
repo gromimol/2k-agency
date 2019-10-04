@@ -92,6 +92,26 @@ $(document).ready(function () {
 		$(this).closest('.drop-link').toggleClass('active');
 	})
 
+	// Плюс/минус товар для корзины
+	;(function(){
+		$('.minus').on('click',function() {
+            var data = $(this).parent().find($('.count__box'));
+            var dataVal = data.val();
+            if(dataVal > 0) {
+                data.val(parseInt(dataVal) - 1);
+            }
+            return false
+        });
+         
+        $('.plus').click(function() {
+            var data = $(this).parent().find($('.count__box'));
+            var dataVal = data.val();
+            if(dataVal >= 100) return;
+            data.val(parseInt(dataVal) + 1);
+            return false
+        });
+	})();
+
 	// slider
 	$('.main-slider').slick({
 		dots: true,
