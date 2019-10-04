@@ -157,6 +157,16 @@
 		opacity: 1;
 		visibility: visible;
 	}
+	.service__content{
+		padding-top: 3em;
+		h4{
+			font-size: 2em;
+			margin-bottom: .5em;
+		}
+	}
+	.service__content .more{
+		opacity: 1;
+	}
 }
 /*1200*/ 
 
@@ -402,6 +412,18 @@
 	}
 	.copyright{
 		font-size: 10px;
+	}
+	.service__list li{
+		width: 50%;
+	}
+	.service__item{
+		height: 30em;
+	}
+	.service__content{
+		font-size: 1.4rem;
+		p{
+			font-size: 1.4em;
+		}
 	}
 }
 /*768*/ 
@@ -678,6 +700,26 @@
 	.filter__item{
 		padding-left: 0;
 		width: 100%;
+	}
+	.service__list li,
+	.service__list .service__list__item--lg{
+		width: 100%;
+	}
+	.service__item{
+		height: 200px;
+		color: #fff;
+		&::after{
+			opacity: 1;
+		}
+	}
+	.service__content{
+		font-size: 11px;
+		&--md{
+			width: 100%;
+		}
+		&--right{
+			margin-left: 0;
+		}
 	}
 }
 /*568*/ 
