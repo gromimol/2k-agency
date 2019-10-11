@@ -153,6 +153,10 @@
 	.product-data{
 		display: none;
 	}
+	.product-list .product-slider__item:hover .product-slider__row .to-cart{
+		visibility: visible;
+		opacity: 1;
+	}
 	.product-slider__item:hover .product-slider__row .to-cart{
 		opacity: 1;
 		visibility: visible;

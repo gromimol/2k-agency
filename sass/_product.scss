@@ -127,6 +127,7 @@
 			opacity: .8;
 		}
 		.ico{
+			flex: none;
 			width: 1.5em;
 			height: 1.5em;
 			margin-right: .5em;
@@ -183,7 +184,11 @@
 		margin: 0;
 	}
 	.to-cart{
-		width: 48%;
+		width: 55%;
+		.text{
+			white-space: nowrap;
+			font-size: .8em;
+		}
 	}
 }
 
