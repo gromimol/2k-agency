@@ -129,6 +129,11 @@ $(document).ready(function () {
         });
 	})();
 
+	// Подсказка
+	$('.tip-container').on('click',function () {
+		$(this).toggleClass('active');
+	})
+
 	// slider
 	$('.main-slider').slick({
 		dots: true,

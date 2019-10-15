@@ -769,6 +769,14 @@ p {
   color: #fff; }
   .header__main__menu > li.catalog-li a .ico {
     color: #cfcfcf; }
+.header__main__menu > li.catalog-li .submenu {
+  background-color: var(--blue); }
+  .header__main__menu > li.catalog-li .submenu li a {
+    color: #fff; }
+    .header__main__menu > li.catalog-li .submenu li a::before {
+      background-color: #fff; }
+    .header__main__menu > li.catalog-li .submenu li a::after {
+      background-color: #fff; }
 
 @media (min-width: 1200px) {
   .header__main__menu > li:hover .submenu {
@@ -779,7 +787,7 @@ p {
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: var(--blue);
+  background-color: #D7EAF6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -798,12 +806,12 @@ p {
       display: inline-block;
       padding: 1.1em 0 1em .8em;
       position: relative;
-      color: #fff; }
+      color: var(--black); }
       .submenu li a::before {
         content: '';
         width: .3em;
         height: .3em;
-        background-color: #fff;
+        background-color: #000;
         border-radius: 50%;
         position: absolute;
         left: 0;
@@ -1034,7 +1042,7 @@ p {
     .mobile-menu .submenu li {
       width: 100%; }
     .mobile-menu .submenu a {
-      color: #fff;
+      color: var(--black);
       font-size: 14px; }
   .mobile-menu .header__top__menu {
     display: block;
@@ -3070,6 +3078,47 @@ textarea.input {
     .product-features__link a:hover {
       color: var(--black);
       text-decoration: none; }
+
+.tip-container {
+  position: relative;
+  cursor: pointer; }
+  .tip-container.active .tip {
+    opacity: 1;
+    visibility: visible; }
+
+.tip {
+  position: absolute;
+  border-radius: 10px;
+  background-color: #d4eaf5;
+  top: 100%;
+  right: 0;
+  width: 150px;
+  padding: 15px;
+  color: var(--black);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  z-index: 3; }
+  .tip::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-bottom-color: #d4eaf5;
+    position: absolute;
+    right: 10px;
+    bottom: 100%; }
+
+.tip__title {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 5px; }
+
+.tip__text {
+  font-size: 10px;
+  line-height: 1.3; }
 
 /*tab-section*/
 .tab-section {

@@ -161,6 +161,20 @@
 					color: #cfcfcf;
 				}
 			}
+			.submenu{
+				background-color: var(--blue);
+				li{
+					a{
+						color: #fff;
+						&::before{
+							background-color: #fff;
+						}
+						&::after{
+							background-color: #fff;
+						}
+					}
+				}
+			}
 		}
 	}
 }
@@ -177,7 +191,7 @@
 	top: 100%;
 	left: 0;
 	width: 100%;
-	background-color: var(--blue);
+	background-color: #D7EAF6;
 	display: flex;
 	flex-wrap: wrap;
 	font-size: 1.125rem;
@@ -192,12 +206,12 @@
 			display: inline-block;
 			padding: 1.1em 0 1em .8em;
 			position: relative;
-			color: #fff;
+			color: var(--black);
 			&::before{
 				content: '';
 				width: .3em;
 				height: .3em;
-				background-color: #fff;
+				background-color: #000;
 				border-radius: 50%;
 				position: absolute;
 				left: 0;
@@ -420,7 +434,7 @@
 			width: 100%;
 		}
 		a{
-			color: #fff;
+			color: var(--black);
 			font-size: 14px;
 		}
 	}
