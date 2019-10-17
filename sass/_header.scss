@@ -8,6 +8,21 @@
 	background-color: var(--grey-light);
 	position: relative;
 	z-index: 1;
+	&::before,
+	&::after{
+		content: '';
+		width: 20px;
+		height: 100%;
+		background-color: rgba(0, 0, 0, .02);
+		position: absolute;
+		top: 0;
+	}
+	&::before{
+		left: -20px;
+	}
+	&::after{
+		right: -20px;
+	}
 }
 .header__top__contact__item{
 	color: var(--blue);
@@ -16,6 +31,12 @@
 	align-items: center;
 	.ico{
 		margin-right: .5em;
+	}
+	.text{
+		sup{
+			font-size: .5em;
+			vertical-align: top;
+		}
 	}
 	&:hover{
 		color: var(--black);

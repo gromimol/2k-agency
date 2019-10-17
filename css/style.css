@@ -629,6 +629,17 @@ p {
   background-color: var(--grey-light);
   position: relative;
   z-index: 1; }
+  .header__top::before, .header__top::after {
+    content: '';
+    width: 20px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.02);
+    position: absolute;
+    top: 0; }
+  .header__top::before {
+    left: -20px; }
+  .header__top::after {
+    right: -20px; }
 
 .header__top__contact__item {
   color: var(--blue);
@@ -641,6 +652,9 @@ p {
           align-items: center; }
   .header__top__contact__item .ico {
     margin-right: .5em; }
+  .header__top__contact__item .text sup {
+    font-size: .5em;
+    vertical-align: top; }
   .header__top__contact__item:hover {
     color: var(--black); }
   .header__top__contact__item--lg {
