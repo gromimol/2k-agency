@@ -94,6 +94,7 @@ $(document).ready(function () {
 
 	// dropdown в карточке товара
 	$('.add-options__btn').on('click', function () {
+		$('.tip-container').removeClass('active');
 		$(this).closest('.add-options').toggleClass('active');
 	})
 
@@ -130,9 +131,12 @@ $(document).ready(function () {
 	})();
 
 	// Подсказка
-	$('.tip-container').on('click',function () {
+	$('.tip-container').on('click',function (e) {
+		$('.add-options').removeClass('active');
 		$(this).toggleClass('active');
-	})
+	});
+
+	
 
 	// slider
 	$('.main-slider').slick({
