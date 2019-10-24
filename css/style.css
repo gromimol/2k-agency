@@ -645,7 +645,7 @@ p {
 
 .header__top__contact__item {
   color: var(--blue);
-  margin-right: 5rem;
+  margin-right: 6rem;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
