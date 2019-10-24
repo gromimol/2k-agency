@@ -53,6 +53,11 @@
 		}
 	}
 }
+.mail-link{
+	.text{
+		border-bottom: 1px dotted var(--blue);
+	}
+}
 .header__top__menu{
 	li{
 		padding: 1.5em 1.5em;
@@ -302,6 +307,9 @@
 	
 }
 
+.cart-empty{
+	
+}
 .header-cart{
 	align-items: center;
 	flex-grow: 1;
